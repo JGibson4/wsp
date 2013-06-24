@@ -1,11 +1,11 @@
 /* http://www.menucool.com */
 
-#sliderFrame {position:relative;width:700px;margin: 0 auto; padding-bottom:55px;} /*remove the "margin:0 auto;" if you want to align the whole slider to the left side*/
+#sliderFrame {position:relative;width:1024px;margin: 0 auto; padding-bottom:55px;} /*remove the "margin:0 auto;" if you want to align the whole slider to the left side*/
 
 #ribbon {width:111px;height:111px;position:absolute;top:-4px;left:-4px;background:url(ribbon.png) no-repeat;z-index:7;}
         
 #slider {
-    width:700px;height:306px;/* Make it the same size as your images */
+    width:1024px;height:306px;/* Make it the same size as your images */
 	background:#fff url(loading.gif) no-repeat 50% 50%;
 	position:relative;
 	margin:0 auto;/*make the image slider center-aligned */
@@ -14,7 +14,10 @@
 #slider img {
 	position:absolute;
 	border:none;
-	display:none;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:100%;
 }
 
 /* the link style (if an image is wrapped in a link) */
@@ -64,6 +67,7 @@ div.navBulletsWrapper  {
 	position:relative;
 	z-index:5;
 	cursor:pointer;
+	display:none;
 }
 
 /* each bullet */
@@ -87,3 +91,4 @@ div.navBulletsWrapper div.active {background-position:0 -11px;}
     -moz-transform:translate3d(0,0,0);
     -o-transform:translate3d(0,0,0);
 }
+

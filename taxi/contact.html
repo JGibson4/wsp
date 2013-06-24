@@ -18,16 +18,16 @@
 
     <body>
     <div class="wrapper">
-        <header>
-    
-          <h1>Yellow Van Taxi Cab | 585.766.5666</h1>
-        <p></p>
-        
+         <header class="top">
         <div class="logo">
-            <a href="#">
-                <img src="#">
+            <a href="index.html">
+                <img src="images/taxi_logo.png">
             </a>
           </div>
+          
+          <h1 id="call"><img src="images/phone.png">   585.766.5666</h1>
+       </header>
+       <div id="clear"></div>
        
             <nav id="main">
     <a data-toggle="collapse" class="btn btn-navbar">
@@ -36,7 +36,7 @@
 	    <span class="icon-bar"></span>
 	</a>
 <ul id="menu" class="overthrow">            	
-				<li><a href="#" tabindex="1" accesskey="h">Home</a></li>
+				<li><a href="index.html" tabindex="1" accesskey="h">Home</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="service.html">Services</a></li>
                 <li><a href="rates.html">Rates</a></li>
@@ -46,6 +46,53 @@
             </nav>
             
             	
+<form class="contact_form" action="mailto:jgibson4@fullsail.edu" method="post" name="contact_form">
+    <ul>
+        <li>
+             <h2>Contact Us</h2>
+             <span class="required_notification">*Required Field</span>
+        </li>
+        <li>
+            <label for="name">Name:</label>
+            <input type="text"  placeholder="Joe Doe" required />
+        </li>
+        <li>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="joe_doe@domain.com" required />
+            <span class="form_hint">Example "name@something.com"</span>
+        </li>
+        <li>
+            <label for="website">Phone:</label>
+            <input type="tel" name="phone" placeholder="###-###-####"/>
+            <span class="form_hint">Example "555-222-1223"</span>
+        </li>
+        <li>
+        <label for="Address">Address:</label>
+        <input type="text" placeholder="10 Cheshire Lane" />
+        <span class="form_hint">10 Address Park</span>
+        </li>
+        <li>
+        <label for="City">City:</label>
+        <input type="text" placeholder="Rochester" />
+        </li>
+        <li>
+        <label for="State">State:</label>
+        <input type="text" placeholder="NY" />
+        </li>
+        <li>
+        <label for="Zip">Zip:</label>
+        <input type="text" placeholder="14321" />
+        </li>
+        
+        <li>
+            <label for="message">Message:</label>
+            <textarea name="message" cols="40" rows="6" required ></textarea>
+        </li>
+        <li>
+        	<button class="submit" type="submit">Submit Form</button>
+        </li>
+    </ul>
+</form>
 
             
 

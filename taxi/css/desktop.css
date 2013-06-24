@@ -6,11 +6,16 @@
   display: none;
 }
 
+#clear{
+	clear:both;
+}
+
 nav {
   *zoom: 1;
-  width: 735px;
+  max-width: 1425px;
   height:90px;
   margin:0 auto;
+  background:
 }
 nav:before,
 nav:after {
@@ -28,7 +33,6 @@ nav ul {
   font-weight:bold;
   font-family:"Arial Black", Gadget, sans-serif;
   font-size: 15px;
-  border-right: 1px solid #e8e8e8;
 }
 nav ul:before,
 nav ul:after {
