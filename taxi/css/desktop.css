@@ -13,7 +13,6 @@
 nav {
   *zoom: 1;
   max-width: 1425px;
-  height:90px;
   margin:0 auto;
   background:
 }
@@ -51,6 +50,8 @@ nav ul li {
   padding: 0 1px 0 0;
   border-left: 1px solid #ccc;
   list-style: none;
+    border-right: 1px solid #ccc;
+
 }
 nav ul a {
   padding: 15px 20px 15px 20px;

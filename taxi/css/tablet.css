@@ -1,11 +1,21 @@
-header h1#branding {
-  font-size: 4em;
+#branding {
+text-align:center;
   margin: 40px 0 0 0;
 }
 header h2#tagline {
+	text-align:center;
   font-size: 1.7em;
   margin: 15px 0 5px 0;
 }
+
+header h2#tagline a{
+	color:#119499;
+}
+
 section.content p {
   line-height: 1.8em;
+}
+
+#sliderFrame, #slider{
+display:none;	
 }
