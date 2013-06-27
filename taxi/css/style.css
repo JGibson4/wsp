@@ -80,7 +80,6 @@ footer {
   padding: 10px 10px;
   background: #FFF;
   font-size: 1.5em;
-  line-height: 1.5em;
   text-align: left;
   -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
@@ -94,9 +93,10 @@ footer {
   position: fixed;
   right: 10px;
   bottom: 0px;
-  background: #000;
+  background: #7f7f7f;
   font-size: 13px;
   color: #FFF;
+  opacity:0.7;
   padding: 10px;
 }
 
@@ -108,12 +108,13 @@ a img, :link img, :visited img {
 	
 #columns{
 	-moz-column-count:3;
-	border:none;
-	width:100%;
+	-moz-column-gap: 30px;
+	-webkit-column-count: 3;
+     column-count: 3;
+	width:95%;
 	margin:0px auto;
 	clear:both;
-	font-size:1em;
-	
+	 
 }
 
 .button{
@@ -133,23 +134,37 @@ a img, :link img, :visited img {
 
 
 .one, .two, .three{
-	width:95%; 
+	width:100%; 
 	height:39.21569% ;
 	font-size:100%;
 	display:inline-block;
-	margin:0;
 	padding:10px;
 	background:#fdaa32;
-	border-radius: 5px;
 	text-align:left;
 	line-height:25px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 
 }
 
+#columns h2{
+	background:#000;
+	color:#fff;
+	height:40px;
+	margin-bottom:-20px;
+	padding:10px;
+	text-align:center;
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	width:100%;
+	
+}
+
+
 #columns p{
 	width:100%;
-	max-height:75%;
+	max-height:50%;
+	font-size:13px;
+	line-height:20px;
 }
 
 
@@ -157,12 +172,12 @@ a img, :link img, :visited img {
 
 
 #copyright{
-	background:	#999;
+	background:	#119499;
 	color:#fff;
 	height:4.375em;
 	border-top:4px solid #FDAA32;
 	text-align:center;
-	padding:15px 0px;
+	padding:15px 15px;
 	line-height:35px
 }
 
@@ -214,7 +229,7 @@ text-decoration:none;
 }
 .contact_form input {
 	height:20px; 
-	width:220px; 
+	width:320px; 
 	padding:5px 8px;
 }
 .contact_form textarea {padding:8px; width:300px;}
@@ -227,9 +242,6 @@ text-decoration:none;
 		padding-right:70px;
 	}
 
-.contact_form input:required, .contact_form textarea:required {
-	background: #fff url(../images/required.png) no-repeat 98% center;
-}
 .contact_form input:required:valid, .contact_form textarea:required:valid {
 	background: #fff url(../images/go.png) no-repeat 98% center;
 	box-shadow: 0 0 5px #5cd053;
@@ -276,6 +288,8 @@ button.submit {
 button.submit:hover {
 	opacity:.85;
 	cursor: pointer; 
+	color:#119499;
+	background:#fff;
 }
 button.submit:active {
 	border: 1px solid #009186;
@@ -287,28 +301,63 @@ button.submit:active {
 	
 }
 
+.form{
+  padding: 10px 10px;
+  background:#fdaa32;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: left;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  margin:20px 0;
+  width:50%;
+  margin:0 auto;
+  margin-top:10px;
+  font-size:14px;
+  float:left;
+  
+}
 
+#map{
+	 margin:20px 0;
+	float:right;
+	padding:10px 10px;
+  background:#fdaa32;
+  -webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.2);
+  width:46%;
+  margin-top:10px;
+  text-align:center;
+  
+}
 
+.foot_nav li{
+	float:right;
+	display:block;
+	width:100px;
+	text-align:center;
+	
+}
 
 /*media queries*/
 
 @media only screen and (min-width:768px) and (max-width: 959px) {
-	#slider{width:100%; margin-top:29.34343%;}
+	#slider{width:100%;}
 	
 }
 
 
 @media only screen and (min-width:480px) and (max-width: 767px) {
-		.logo {display:none;}
-		#slider{display:none;}
+	#slider{width:100%;}
 
 }
 
 
 @media only screen and (min-width:479px) and (max-width:766px) {
-	
-		.logo {display:none;}
-		#slider{display:none;}
+		#slider{width:100%;}
+
 }
 
 

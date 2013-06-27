@@ -9,6 +9,7 @@ header nav {
   text-align: left;
   height: 40px;
   width: 100%;
+  z-index:1000;
 }
 /* The button on the top-right */
 nav .btn-navbar {
@@ -80,7 +81,6 @@ ul#menu li {
   width: 100%;
   border-bottom: 1px solid #ccc;
   background-color: #ededed;
-  background-repeat: repeat-x;
   background-image: -moz-linear-gradient(top, #ffffff, #ededed);
   background-image: -ms-linear-gradient(top, #ffffff, #ededed);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #ededed));

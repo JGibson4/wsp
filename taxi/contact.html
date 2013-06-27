@@ -38,14 +38,14 @@
                 <li><a href="about_us.html">About Us</a></li>
             </ul>
             </nav></header>
-            <div class="clearfix">
+           
             <section class="content clearfix">
             	
 <form class="contact_form" action="mailto:jgibson4@fullsail.edu" method="post" name="contact_form">
     <ul>
         <li>
              <h2>Contact Us</h2>
-             <span class="required_notification">*Required Field</span>
+             
         </li>
         <li>
             <label for="name">Name:</label>
@@ -58,7 +58,7 @@
         </li>
         <li>
             <label for="website">Phone:</label>
-            <input type="tel" name="phone" placeholder="###-###-####"/>
+            <input type="tel" name="phone" placeholder="###-###-####" required />
             <span class="form_hint">Example "555-222-1223"</span>
         </li>
         <li>
@@ -75,7 +75,7 @@
         <input type="text" placeholder="NY" />
         </li>
         <li>
-        <label for="Zip">Zip:</label>
+        <label for="Zip" class="zip">Zip:</label>
         <input type="text" placeholder="14321" />
         </li>
         
@@ -87,13 +87,24 @@
         	<button class="submit" type="submit">Submit Form</button>
         </li>
     </ul>
-</form></section>
+</form>
+
+</section>
 
             
 
 
-        <footer id="copyright">
-            <p>&copy; Joseph Gibson 2013</p>
+       <div id="bottom">
+        <footer id="copyright"> <ul class="foot_nav">
+            	<li><a href="contact.html">Contact Us</a></li>
+            	<li><a href="services.html">Service</a></li>
+                <li><a href="rates.html">Rates</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+           </ul>
+            <p>&copy; Yellow Van Taxi Service 2013</p>
+           
+                
         </footer>
         <div id="dimensions">
 	Screen width: <span class="width"></span>
