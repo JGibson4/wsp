@@ -1,11 +1,10 @@
 /* http://www.menucool.com */
 
-#sliderFrame {position:relative;width:1024px;margin: 0 auto; padding-bottom:55px;} /*remove the "margin:0 auto;" if you want to align the whole slider to the left side*/
+#sliderFrame {position:relative;width:88% ;margin: 0 auto; padding-bottom:55px;} /*remove the "margin:0 auto;" if you want to align the whole slider to the left side*/
 
-#ribbon {width:111px;height:111px;position:absolute;top:-4px;left:-4px;background:url(ribbon.png) no-repeat;z-index:7;}
         
 #slider {
-    width:1024px;height:306px;/* Make it the same size as your images */
+    width:88%;height:306px;/* Make it the same size as your images */
 	background:#fff url(loading.gif) no-repeat 50% 50%;
 	position:relative;
 	margin:0 auto;/*make the image slider center-aligned */
@@ -42,6 +41,7 @@ div.mc-caption-bg, div.mc-caption-bg2 {
 }
 div.mc-caption-bg {
 	background-color:black;
+	width:100%;
 }
 div.mc-caption {
 	font: bold 14px/20px Arial;
@@ -49,6 +49,7 @@ div.mc-caption {
 	z-index:4;
 	padding:10px 0;/*Adding a padding-left or padding-right here will make the caption area wider than its background. Sometimes you may need to define its width again here to keep it the same width as its background area (div.mc-caption-bg).*/
 	text-align:center;
+	width:100%;
 }
 div.mc-caption a {
 	color:#FB0;
