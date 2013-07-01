@@ -44,7 +44,7 @@ div.mc-caption-bg {
 	width:100%;
 }
 div.mc-caption {
-	font: bold 14px/20px Arial;
+	font: bold 18px/20px Arial;
 	color:#EEE;
 	z-index:4;
 	padding:10px 0;/*Adding a padding-left or padding-right here will make the caption area wider than its background. Sometimes you may need to define its width again here to keep it the same width as its background area (div.mc-caption-bg).*/
