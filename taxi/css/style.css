@@ -148,16 +148,18 @@ a img, :link img, :visited img {
 	font-size:100%;
 	display:inline-block;
 	padding:10px;
-	background:#fdaa32;
+	background:#fff;
 	text-align:left;
 	line-height:25px;
-	box-shadow: 0 1px 3px #CCC;
+  -webkit-box-shadow: 0 0 3px 1px #CCC;
+  -moz-box-shadow: 0 0 3px 1px #CCC;
+  box-shadow: 0 0 3px 1px #CCC;
 
 }
 
 #columns h2{
-	background:#000;
-	color:#fff;
+	background:#fdaa32;
+	color:#000;
 	height:40px;
 	margin-bottom:-20px;
 	padding:10px;
